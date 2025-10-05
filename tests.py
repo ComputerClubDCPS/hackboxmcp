@@ -1,4 +1,3 @@
-
 import pytest
 from unittest.mock import Mock, patch
 from http.server import HTTPServer
@@ -77,7 +76,8 @@ def test_cleanup_instance_failed_invalid_instance(mock_kali_instance_manager):
 
 def test_hackbox_mcp_server(mock_server, mock_kali_instance_manager):
     server = HackBoxMCPServer()
-    assert server.web_panel.mcp_server == server assert isinstance(server.instance_manager, KaliInstanceManager)
+    assert server.web_panel.mcp_server == server
+    assert isinstance(server.instance_manager, KaliInstanceManager)
 
 def test_hackbox_mcp_server_running(mock_server, mock_kali_instance_manager):
     server = HackBoxMCPServer()
