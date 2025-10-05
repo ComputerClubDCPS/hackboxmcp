@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import Mock, patch
 from http.server import HTTPServer
-from .hackbox_mcp_server import HackBoxWebPanel, KaliInstanceManager, HackBoxMCPServer
+from .hackbox_server import HackBoxWebPanel, KaliInstanceManager, HackBoxMCPServer
 
 # Mock classes and functions that use external resources
 @pytest.fixture
