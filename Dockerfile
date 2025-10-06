@@ -20,7 +20,7 @@ RUN useradd -m -u 1000 hackbox
 USER hackbox
 
 # Expose port for HTTP transport (optional)
-EXPOSE 8000
+EXPOSE 8080
 
 # Run the server
 CMD ["python", "hackbox_server.py"]
